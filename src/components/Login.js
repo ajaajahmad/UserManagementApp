@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
 import { Form, Button, Container, Row, Col, InputGroup } from 'react-bootstrap';
 import { loginUser } from '../services/api';
 import { FaUser, FaLock } from 'react-icons/fa';

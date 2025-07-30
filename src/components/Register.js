@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Form, Button, Container, Row, Col, Alert, Spinner, InputGroup, OverlayTrigger, Tooltip, Modal,
+  Form, Button, Container, Alert, Spinner, InputGroup, Modal,
 } from 'react-bootstrap';
 import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
 import axios from 'axios';
@@ -78,7 +78,7 @@ function Register() {
     setResponseMessage(null);
 
     try {
-      const response = await axios.post('http://localhost:8080/api/register', formData);
+      await axios.post('http://localhost:8080/api/register', formData);
       setResponseVariant('success');
       setResponseMessage('Registration successful!');
       handleShowModal();
